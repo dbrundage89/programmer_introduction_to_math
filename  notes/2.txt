@@ -1,0 +1,21 @@
+2.1 Polynomial Definition
+    f(x) = a0 +a1*x+a2*x^2+an*x^n
+    the coefficients ai are real numbers
+    the degree of the polynomial is the integer n
+
+    f(x) = 0
+    zero polynomial by convention has the degree -1
+
+    todo: Horner's method
+    todo: Backus-Naur form
+
+2.2 Notation
+    domain - all possible inputs
+    range - all possible outputs
+    codomain - type of possible outputs
+
+2.3 Existence and Uniqueness
+    todo: Kleinberg's Impossibility Theorem for Clustering
+
+    For any integer n >= 0  and any list of n+1 points that are pairs of real numbers (xi,yi) with x0 < x1 < xn
+    there is a unique degree n polynomial passing through a choice of n+1 points
