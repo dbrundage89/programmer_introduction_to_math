@@ -1,5 +1,5 @@
 defmodule Math.Polynomial do
-  def product_excluding(points, xi) do
+  defp product_excluding(points, xi) do
     points
     |> Enum.map(fn {x, _y} -> x end)
     |> Enum.reject(fn x -> x == xi end)
@@ -9,6 +9,8 @@ defmodule Math.Polynomial do
   end
 
   def interpolate(points) do
+    # add contraint check
+
     points
     |> Enum.reduce(fn _x -> 0 end, fn {xi, yi}, acc ->
       fn x ->
