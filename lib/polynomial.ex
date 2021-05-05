@@ -10,6 +10,7 @@ defmodule Math.Polynomial do
 
   def interpolate(points) do
     # add contraint check
+    # points [{x,y}]
 
     points
     |> Enum.reduce(fn _x -> 0 end, fn {xi, yi}, acc ->
